@@ -1,7 +1,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/Domun335/FLP-01/badge)](https://www.codefactor.io/repository/github/Domun335/FLP-01)
 # Projekt: Odwzorowanie strony internetowej z serwisu figma
 
-Autor: Dominik
+Autor:  Dominik
 
 ## Opis
 
@@ -25,4 +25,4 @@ Autor: Dominik
 
 W razie pytań lub problemów związanych z projektem, skontaktuj się z autorami poprzez discorda:
 
-- Dominik: Domun#5047
+- Domun#5047

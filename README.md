@@ -23,6 +23,6 @@ Autor:  Dominik
 
 ## Kontakt
 
-W razie pytań lub problemów związanych z projektem, skontaktuj się z autorami poprzez discorda:
+W razie pytań lub problemów związanych z projektem, skontaktuj się z autorem poprzez discorda:
 
 - Domun#5047

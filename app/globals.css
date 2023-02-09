@@ -2,3 +2,86 @@ body {
   margin: 0px;
   background-color: #ffffff;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.header-cointeiner {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+}
+.popup {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 12px;
+}
+.popup a:hover {
+  color: #858585;
+  transition: 0.1s;
+}
+.nav {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-position {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 96px;
+}
+.nav-bar ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 56px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+}
+.nav-bar a::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 75px;
+  height: 2px;
+  background-color: #000000;
+  scale: 0 1;
+  transform-origin: center;
+  transition: 0.4s;
+}
+.nav-bar a:hover::before {
+  scale: 1;
+}
+.nav-button {
+  position: relative;
+  padding: 6px 24px 6px 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -2%;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.nav-button:hover {
+  scale: 1.05;
+}

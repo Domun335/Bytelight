@@ -54,6 +54,39 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <main>
+        <section className="main-section">
+          <div className="main-section-text">
+            <div className="main-section-text-first">
+              <p>Industry Software Solution⚡</p>
+              <h1>Custom digital platform software development</h1>
+              <div className="main-section-buttons">
+                <button className="main-button-black">Talk to sales</button>
+                <button className="main-button-white">
+                  Check our products ✨
+                </button>
+              </div>
+            </div>
+            <div className="main-section-text-second">
+              <p>
+                We specialize in developing custom software solutions that
+                enhance efficiency and organization for a variety of clients in
+                various industries.
+              </p>
+            </div>
+          </div>
+          <div className="main-section-image">
+            <Image
+              src="/main-img.png"
+              alt="hero"
+              width="1280"
+              height="560"
+              className="hero"
+            />
+          </div>
+        </section>
+      </main>
     </div>
   )
 }

@@ -168,3 +168,94 @@ a {
   background-color: #000000;
   color: #ffffff;
 }
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.testimonials-text-box span {
+  color: #293fff;
+}
+.testimonials-text-box {
+  font-size: 20px;
+  text-align: center;
+}
+.testimonials-icons {
+  width: 1060px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-section {
+  position: relative;
+  width: 100%;
+  height: 851px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards-section-text-box {
+  width: 1281px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.cards-section-text-box p {
+  color: #2400ff;
+  font-size: 14px;
+  margin: 0px;
+}
+.cards-section-text-box h1 {
+  font-size: 48px;
+  margin: 0px;
+  margin-top: 17px;
+  margin-bottom: 54px;
+}
+.cards-section-cointeiner-card {
+  position: relative;
+  width: 1281px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.crad {
+  position: relative;
+  padding: 25px;
+  width: 250px;
+  height: 400px;
+  border: #e6e6e6 solid 3px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.crad:hover {
+  scale: 1.1;
+}
+.crad p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.crad h2 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.frame {
+  width: 64px;
+  height: 64px;
+  border: #e6e6e6 solid 3px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

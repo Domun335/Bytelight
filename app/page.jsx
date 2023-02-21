@@ -86,6 +86,7 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section className="testimonials">
           <div className="testimonials-text-box">
             <p>
@@ -159,6 +160,40 @@ export default function Home() {
                 through ongoing support and maintenance
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="solution-section">
+          <div className="solution-section-image">
+            <Image
+              src="/image-solution.png"
+              alt="solution"
+              width="431"
+              height="461"
+            />
+          </div>
+          <div className="solution-section-text-box">
+            <p>
+              <span>Solutions for every factor</span>
+            </p>
+            <h1>Solutions for business collaborations⚡</h1>
+            <p>
+              Creating custom software solutions that enhance efficiency and
+              streamline operations for a variety of industries, including
+              individuals, businesses, organizations, and institutions.
+            </p>
+            <div className="solution-section-text-box-mark">
+              <div className="strar-back">
+                <Image src="/strar.png" alt="" width="30" height="30" />
+              </div>
+              <p>Deploy</p>
+              <Image src="/text-box-arrow.png" alt="" width="19" height="12" />
+            </div>
+            <p>
+              Deploy is designed to automate and improve the manual processes of
+              software administration and management, thereby freeing up the
+              engineers to do what they do best.
+            </p>
           </div>
         </section>
       </main>

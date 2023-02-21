@@ -259,3 +259,43 @@ a {
   justify-content: center;
   align-items: center;
 }
+.solution-section {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+}
+.solution-section-text-box {
+  max-width: 626px;
+  font-size: 16px;
+}
+.solution-section-text-box span {
+  color: #ffcb14;
+  font-size: 14px;
+}
+.solution-section-text-box h1 {
+  font-size: 48px;
+}
+.solution-section-text-box-mark {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.solution-section-text-box-mark p {
+  font-size: 28px;
+  text-decoration: underline;
+}
+.strar-back {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e5ff;
+  border-radius: 20px;
+}

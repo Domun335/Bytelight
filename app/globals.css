@@ -259,7 +259,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.solution-section {
+.content-section {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -270,15 +270,15 @@ a {
   align-items: center;
   gap: 95px;
 }
-.solution-section-text-box {
+.content-section-text-box {
   max-width: 626px;
   font-size: 16px;
 }
-.solution-section-text-box span {
+.content-section-text-box span {
   color: #ffcb14;
   font-size: 14px;
 }
-.solution-section-text-box h1 {
+.content-section-text-box h1 {
   font-size: 48px;
 }
 .solution-section-text-box-mark {
@@ -298,4 +298,32 @@ a {
   align-items: center;
   background-color: #e9e5ff;
   border-radius: 20px;
+}
+.section-rivers {
+  flex-direction: row-reverse;
+  height: 700px;
+}
+.section-rivers-text span {
+  color: #7127cf;
+}
+.section-rivers-text h1 {
+  font-size: 45px;
+}
+.section-rivers-text p {
+  font-size: 18px;
+}
+.content-section-button button {
+  color: #ffffff;
+  margin-top: 40px;
+  background-color: #000000;
+  border-radius: 100px;
+  height: 37px;
+  width: 120px;
+  transition: 0.4s;
+}
+.content-section-button button:hover {
+  background-color: #eeeeee;
+  color: #000000;
+  scale: 1.05;
+  box-shadow: 4px 4px 26px #505050;
 }

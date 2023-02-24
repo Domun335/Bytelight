@@ -163,8 +163,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="solution-section">
-          <div className="solution-section-image">
+        <section className="content-section">
+          <div className="content-section-image">
             <Image
               src="/image-solution.png"
               alt="solution"
@@ -172,7 +172,7 @@ export default function Home() {
               height="461"
             />
           </div>
-          <div className="solution-section-text-box">
+          <div className="content-section-text-box">
             <p>
               <span>Solutions for every factor</span>
             </p>
@@ -194,6 +194,31 @@ export default function Home() {
               software administration and management, thereby freeing up the
               engineers to do what they do best.
             </p>
+          </div>
+        </section>
+
+        <section className="content-section section-rivers">
+          <div className="content-section-image">
+            <Image
+              src="/image-expert.png"
+              alt="solution"
+              width="431"
+              height="461"
+            />
+          </div>
+          <div className="content-section-text-box section-rivers-text">
+            <p>
+              <span>Solutions for every factor</span>
+            </p>
+            <h1>Expert software solutions for businesses and individuals</h1>
+            <p>
+              We design and implement custom software to improve efficiency and
+              streamline operations for various clients, including individuals,
+              businesses, organizations, and institutions.
+            </p>
+            <div className="content-section-button">
+              <button>Contact us</button>
+            </div>
           </div>
         </section>
       </main>

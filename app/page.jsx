@@ -201,7 +201,7 @@ export default function Home() {
           <div className="content-section-image">
             <Image
               src="/image-expert.png"
-              alt="solution"
+              alt="expert"
               width="431"
               height="461"
             />
@@ -215,6 +215,31 @@ export default function Home() {
               We design and implement custom software to improve efficiency and
               streamline operations for various clients, including individuals,
               businesses, organizations, and institutions.
+            </p>
+            <div className="content-section-button">
+              <button>Contact us</button>
+            </div>
+          </div>
+        </section>
+
+        <section className="content-section revamp-section">
+          <div className="content-section-image">
+            <Image
+              src="/image-revamp.png"
+              alt="revamp"
+              width="283"
+              height="482"
+            />
+          </div>
+          <div className="content-section-text-box revamp-text-box">
+            <p>
+              <span>Work with us</span>
+            </p>
+            <h1>Revamp your business strategies with us today!</h1>
+            <hr />
+            <p>
+              Rethink and revamp the ways your business operates to create new
+              and improved solutions
             </p>
             <div className="content-section-button">
               <button>Contact us</button>

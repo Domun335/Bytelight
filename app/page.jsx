@@ -291,6 +291,96 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <footer>
+        <div className="footer">
+          <div className="footer-cointainer">
+            <section className="footer-top-section">
+              <div className="footer-top-section-logo">
+                <Image
+                  src="/logo-footer.png"
+                  alt="logo"
+                  width="232"
+                  height="47"
+                />
+              </div>
+              <div className="footer-top-section-container-lists">
+                <div className="footer-top-section-list">
+                  <h3>Product</h3>
+                  <ul>
+                    <li>
+                      <Link href="#">Deploy</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Blog</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-top-section-list">
+                  <h3>Company</h3>
+                  <ul>
+                    <li>
+                      <Link href="#">About Us</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Industries</Link>
+                    </li>
+                    <li>
+                      <Link href="#">How we work</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Career</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="footer-top-section-list">
+                  <h3>Support</h3>
+                  <ul>
+                    <li>
+                      <Link href="#">Terms</Link>
+                    </li>
+                    <li>
+                      <Link href="#">Privacy</Link>
+                    </li>
+                    <li>
+                      <Link href="#">FAQs</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section className="footer-bottom-section">
+              <p>Bytelight. © 2023. All Rights Reserved.</p>
+              <div className="footer-bottom-section-media">
+                <Link href="#">
+                  <Image
+                    src="/instagram.png"
+                    alt="instagram"
+                    width="48"
+                    height="48"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/facebook.png"
+                    alt="facebook"
+                    width="48"
+                    height="48"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/twitter.png"
+                    alt="twitter"
+                    width="48"
+                    height="48"
+                  />
+                </Link>
+              </div>
+            </section>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

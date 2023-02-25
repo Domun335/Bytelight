@@ -246,6 +246,50 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="newsletter-section">
+          <div className="newsletter-section-text-box">
+            <h1>
+              Subscribe to
+              <br />
+              <span>our newsletter</span>
+            </h1>
+            <div className="newsletter-section-text-box-left">
+              <Image
+                src="/megaphone.png"
+                alt=""
+                width="18"
+                height="14"
+                className="newsletter-image"
+              />
+              <p>
+                Get the latest <span>free</span> event conference notification
+                and a reminder of upcoming speakers.
+              </p>
+            </div>
+          </div>
+          <div className="newsletter-section-form">
+            <form>
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="input-email"
+              />
+              <label className="newsletter-section-form-checkbox">
+                <input type="checkbox" className="checkbox" />
+                <p>
+                  I agree with
+                  <Link href="#"> Privacy Policy</Link> and
+                  <Link href="#"> Terms of Conditions</Link>
+                </p>
+              </label>
+              <button>
+                Subscribe
+                <Image src="/subscribe.png" alt="" width="15" height="11" />
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
     </div>
   )

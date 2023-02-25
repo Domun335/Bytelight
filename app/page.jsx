@@ -13,10 +13,12 @@ export default function Home() {
       <header>
         <div className="header-cointeiner">
           <div className="popup">
-            <Image src="/star.png" alt="" width="20" height="19" />
-            <p>
-              <Link href="#">A custom notification goes here</Link>
-            </p>
+            <span>
+              <Image src="/star.png" alt="" width="20" height="19" />
+              <p>
+                <Link href="#">A custom notification goes here</Link>
+              </p>
+            </span>
           </div>
           <div className="nav">
             <div className="logo">
@@ -186,8 +188,16 @@ export default function Home() {
               <div className="strar-back">
                 <Image src="/strar.png" alt="" width="30" height="30" />
               </div>
-              <p>Deploy</p>
-              <Image src="/text-box-arrow.png" alt="" width="19" height="12" />
+              <p>
+                <Link href="#">Deploy</Link>
+              </p>
+              <Image
+                src="/text-box-arrow.png"
+                alt=""
+                width="19"
+                height="12"
+                className="arrow-hv"
+              />
             </div>
             <p>
               Deploy is designed to automate and improve the manual processes of

@@ -25,9 +25,13 @@ a {
   color: #ffffff;
   font-size: 12px;
 }
-.popup a:hover {
-  color: #858585;
+.popup span:hover {
+  opacity: 0.5;
   transition: 0.2s;
+}
+.popup span {
+  display: flex;
+  align-items: center;
 }
 .nav {
   position: relative;
@@ -293,6 +297,17 @@ a {
   font-size: 28px;
   text-decoration: underline;
 }
+.solution-section-text-box-mark p:hover + .arrow-hv {
+  animation: slide-right 2s ease-out infinite;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .strar-back {
   width: 64px;
   height: 64px;
@@ -320,8 +335,8 @@ a {
   margin-top: 40px;
   background-color: #000000;
   border-radius: 100px;
-  height: 37px;
-  width: 120px;
+  height: 42px;
+  width: 125px;
   transition: 0.4s;
 }
 .content-section-button button:hover {
@@ -371,6 +386,7 @@ a {
 }
 .newsletter-section-text-box-left {
   position: relative;
+  padding-top: 126px;
   max-width: 446px;
   display: flex;
   align-items: center;
@@ -414,9 +430,9 @@ a {
 }
 .newsletter-section-form button {
   background-color: #000000;
-  max-height: 64px;
-  padding-left: 32px;
-  padding-right: 32px;
+  max-height: 56px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;

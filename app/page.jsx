@@ -34,102 +34,114 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
-        <section className="main-section">
-          <div className="main-section-text">
-            <div className="main-section-text-first">
-              <p>Industry Software Solution⚡</p>
+      <main className="main">
+        <section className="hero">
+          <div className="hero__up">
+            <div className="hero__up--first">
+              <p>INDUSTRY SOFTWARE SOLUTION⚡</p>
               <h1>Custom digital platform software development</h1>
-              <div className="main-section-buttons">
-                <button className="main-button-black">Talk to sales</button>
-                <button className="main-button-white">Check our products ✨</button>
+
+              <div className="hero__buttons">
+                <button className="hero__button--black">Talk to sales</button>
+                <button className="hero__button--white">Check our products ✨</button>
               </div>
             </div>
-            <div className="main-section-text-second">
-              <p>
-                We specialize in developing custom software solutions that enhance
-                efficiency and organization for a variety of clients in various
-                industries.
-              </p>
-            </div>
+
+            <p className="hero__up--second">
+              We specialize in developing custom software solutions that enhance
+              efficiency and organization for a variety of clients in various industries.
+            </p>
           </div>
-          <div className="main-section-image">
-            <Image
-              src="/main-img.png"
-              alt="hero"
-              width="1280"
-              height="560"
-              className="hero"
-            />
-          </div>
+
+          <Image
+            src="/main-img.png"
+            alt="hero"
+            width="1280"
+            height="560"
+            className="hero__image"
+          />
         </section>
 
         <section className="testimonials">
-          <div className="testimonials-text-box">
+          <div className="testimonials__text">
             <p>
               Used by over <span>50+ milion</span> users worldwide
               <br /> and trusted by top-tier companies.
             </p>
           </div>
-          <div className="testimonials-icons">
-            <Image src="/forbes.png" alt="forbes" width="70" height="19" />
-            <Image src="/fortune.png" alt="fortune" width="80" height="19" />
-            <Image src="/tc.png" alt="tc" width="47" height="23" />
-            <Image src="/wsj.png" alt="wsj" width="52" height="28" />
-            <Image src="/ft.png" alt="ft" width="91" height="28" />
-            <Image src="/cnbc.png" alt="cnbc" width="42" height="32" />
+
+          <div className="testimonials__icons">
+            <Image src="/forbes.svg" alt="forbes" width="50" height="50" />
+            <Image src="/fortune.svg" alt="fortune" width="50" height="50" />
+            <Image src="/tc.svg" alt="tc" width="50" height="50" />
+            <Image src="/wsj.svg" alt="wsj" width="50" height="50" />
+            <Image src="/ft.svg" alt="ft" width="50" height="50" />
+            <Image src="/cnbc.svg" alt="cnbc" width="50" height="50" />
           </div>
         </section>
-        <section className="cards-section">
-          <div className="cards-section-text-box">
-            <p>Solutions for every factor</p>
+
+        <section className="cards">
+          <div className="cards__text">
+            <p>SOLUTIONS FOR EVERY FACTOR</p>
+
             <h1>
               Software architecture, design and
               <br /> implementation for any industry🔥.
             </h1>
           </div>
-          <div className="cards-section-cointeiner-card">
-            <div className="crad">
-              <div>
-                <div className="frame">
-                  <Image src="/qube.png" alt="" width="22" height="22" />
+
+          <div className="cards__cointeiner">
+            <div className="cards__card">
+              <span>
+                <div className="cards__card--frame">
+                  <Image src="/qube.svg" alt="" width="20" height="20" />
                 </div>
+
                 <h2>Custom software development</h2>
-              </div>
+              </span>
+
               <p>
                 We design and build custom software applications to meet the specific
                 needs of our clients.
               </p>
             </div>
-            <div className="crad">
-              <div>
-                <div className="frame">
-                  <Image src="/vector.png" alt="" width="22" height="21" />
+
+            <div className="cards__card">
+              <span>
+                <div className="cards__card--frame">
+                  <Image src="/bulb.svg" alt="" width="20" height="20" />
                 </div>
+
                 <h2>Business consulting</h2>
-              </div>
+              </span>
+
               <p>
                 Assisting other companies in improving business strategies and operations
               </p>
             </div>
-            <div className="crad">
-              <div>
-                <div className="frame">
-                  <Image src="/eath.png" alt="" width="19" height="19" />
+
+            <div className="cards__card">
+              <span>
+                <div className="cards__card--frame">
+                  <Image src="/eath.svg" alt="" width="20" height="20" />
                 </div>
                 <h2>Web development services</h2>
-              </div>
+              </span>
+
               <p>
                 Creating and designing functional websites for businesses or individuals.
               </p>
             </div>
-            <div className="crad">
-              <div>
-                <div className="frame">
-                  <Image src="/qubemore.png" alt="" width="17" height="17" />
+
+            <div className="cards__card">
+              <span>
+                <div className="cards__card--frame">
+                  <Image src="/qubemore.svg" alt="" width="20" height="20" />
                 </div>
+
                 <h2>Application maintenance and support</h2>
-              </div>
+              </span>
+
               <p>
                 We ensure software applications run smoothly and efficiently through
                 ongoing support and maintenance

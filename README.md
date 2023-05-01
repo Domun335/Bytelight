@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/Domun335/FLP-01/badge)](https://www.codefactor.io/repository/github/Domun335/FLP-01)
+[![CodeFactor](https://www.codefactor.io/repository/github/domun335/bytelight/badge)](https://www.codefactor.io/repository/github/domun335/bytelight)
 
 # Projekt: Odwzorowanie strony internetowej z serwisu figma
 

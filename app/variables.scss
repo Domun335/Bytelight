@@ -1,0 +1,36 @@
+//* variables
+$white: #ffffff;
+$black: #000000;
+
+//* Flex tamplate
+@mixin setFlex($flex-direction, $justify-content: center, $align-items: center) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+//* Button styles
+%buttonStyles {
+  @include setFlex(row);
+  border: none;
+  transition: 0.4s;
+  border-radius: 99px;
+  background-color: $black;
+  color: $white;
+}
+
+//* Font
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+  font-family: 'General Sans';
+  src: url('//cdn.fontshare.com/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH.woff2')
+      format('woff2'),
+    url('//cdn.fontshare.com/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH.woff')
+      format('woff'),
+    url('//cdn.fontshare.com/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH.ttf')
+      format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}

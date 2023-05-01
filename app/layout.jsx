@@ -1,13 +1,10 @@
-import './globals.css'
+import Head from './head'
+import './globals.scss'
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html lang="pl">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <Head />
       <body>{children}</body>
     </html>
   )

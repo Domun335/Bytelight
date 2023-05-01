@@ -1,58 +1,35 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import Link from 'next/link'
-
-const inter = Inter({
-  subsets: ['latin'],
-  weight: '500',
-})
 
 export default function Home() {
   return (
-    <div className={inter.className}>
-      <header>
-        <div className="header-cointeiner">
-          <div className="popup">
-            <span>
-              <Image src="/star.png" alt="" width="20" height="19" />
-              <p>
-                <Link href="#">A custom notification goes here</Link>
-              </p>
-            </span>
-          </div>
-          <div className="nav">
-            <div className="logo">
-              <Image src="/logo.png" alt="logo" width="126" height="21" />
-            </div>
-            <div className="nav-position">
-              <nav>
-                <div className="nav-bar">
-                  <ul>
-                    <li>
-                      <Link href="#">
-                        Products
-                        <Image
-                          src="/arrow-down.png"
-                          alt=""
-                          width="16"
-                          height="16"
-                        />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">Company</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Industries</Link>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <button className="nav-button" href="#">
-                Contact sales
-                <Image src="/arrow-right.png" alt="" width="16" height="16" />
-              </button>
-            </div>
+    <>
+      <header className="header">
+        <div className="header__popup">
+          <Link href="/">
+            <p>A custom notification goes here</p>
+          </Link>
+        </div>
+
+        <div className="header__container">
+          <Image src="/Logo.svg" alt="logo" width="127" height="21" />
+
+          <div className="header__container--left">
+            <nav>
+              <ul className="header__navbar">
+                <Link href="/">
+                  <li className="header__navbar--arrow">Products</li>
+                </Link>
+                <Link href="/">
+                  <li>Company</li>
+                </Link>
+                <Link href="/">
+                  <li>Industries</li>
+                </Link>
+              </ul>
+            </nav>
+
+            <button className="header__button">Contact sales</button>
           </div>
         </div>
       </header>
@@ -65,16 +42,14 @@ export default function Home() {
               <h1>Custom digital platform software development</h1>
               <div className="main-section-buttons">
                 <button className="main-button-black">Talk to sales</button>
-                <button className="main-button-white">
-                  Check our products ✨
-                </button>
+                <button className="main-button-white">Check our products ✨</button>
               </div>
             </div>
             <div className="main-section-text-second">
               <p>
-                We specialize in developing custom software solutions that
-                enhance efficiency and organization for a variety of clients in
-                various industries.
+                We specialize in developing custom software solutions that enhance
+                efficiency and organization for a variety of clients in various
+                industries.
               </p>
             </div>
           </div>
@@ -122,8 +97,8 @@ export default function Home() {
                 <h2>Custom software development</h2>
               </div>
               <p>
-                We design and build custom software applications to meet the
-                specific needs of our clients.
+                We design and build custom software applications to meet the specific
+                needs of our clients.
               </p>
             </div>
             <div className="crad">
@@ -134,8 +109,7 @@ export default function Home() {
                 <h2>Business consulting</h2>
               </div>
               <p>
-                Assisting other companies in improving business strategies and
-                operations
+                Assisting other companies in improving business strategies and operations
               </p>
             </div>
             <div className="crad">
@@ -146,8 +120,7 @@ export default function Home() {
                 <h2>Web development services</h2>
               </div>
               <p>
-                Creating and designing functional websites for businesses or
-                individuals.
+                Creating and designing functional websites for businesses or individuals.
               </p>
             </div>
             <div className="crad">
@@ -158,8 +131,8 @@ export default function Home() {
                 <h2>Application maintenance and support</h2>
               </div>
               <p>
-                We ensure software applications run smoothly and efficiently
-                through ongoing support and maintenance
+                We ensure software applications run smoothly and efficiently through
+                ongoing support and maintenance
               </p>
             </div>
           </div>
@@ -167,12 +140,7 @@ export default function Home() {
 
         <section className="content-section">
           <div className="content-section-image">
-            <Image
-              src="/image-solution.png"
-              alt="solution"
-              width="431"
-              height="461"
-            />
+            <Image src="/image-solution.png" alt="solution" width="431" height="461" />
           </div>
           <div className="content-section-text-box">
             <p>
@@ -180,9 +148,9 @@ export default function Home() {
             </p>
             <h1>Solutions for business collaborations⚡</h1>
             <p>
-              Creating custom software solutions that enhance efficiency and
-              streamline operations for a variety of industries, including
-              individuals, businesses, organizations, and institutions.
+              Creating custom software solutions that enhance efficiency and streamline
+              operations for a variety of industries, including individuals, businesses,
+              organizations, and institutions.
             </p>
             <div className="solution-section-text-box-mark">
               <div className="strar-back">
@@ -200,21 +168,16 @@ export default function Home() {
               />
             </div>
             <p>
-              Deploy is designed to automate and improve the manual processes of
-              software administration and management, thereby freeing up the
-              engineers to do what they do best.
+              Deploy is designed to automate and improve the manual processes of software
+              administration and management, thereby freeing up the engineers to do what
+              they do best.
             </p>
           </div>
         </section>
 
         <section className="content-section section-rivers">
           <div className="content-section-image">
-            <Image
-              src="/image-expert.png"
-              alt="expert"
-              width="431"
-              height="461"
-            />
+            <Image src="/image-expert.png" alt="expert" width="431" height="461" />
           </div>
           <div className="content-section-text-box section-rivers-text">
             <p>
@@ -222,9 +185,9 @@ export default function Home() {
             </p>
             <h1>Expert software solutions for businesses and individuals</h1>
             <p>
-              We design and implement custom software to improve efficiency and
-              streamline operations for various clients, including individuals,
-              businesses, organizations, and institutions.
+              We design and implement custom software to improve efficiency and streamline
+              operations for various clients, including individuals, businesses,
+              organizations, and institutions.
             </p>
             <div className="content-section-button">
               <button>Contact us</button>
@@ -234,12 +197,7 @@ export default function Home() {
 
         <section className="content-section revamp-section">
           <div className="content-section-image">
-            <Image
-              src="/image-revamp.png"
-              alt="revamp"
-              width="283"
-              height="482"
-            />
+            <Image src="/image-revamp.png" alt="revamp" width="283" height="482" />
           </div>
           <div className="content-section-text-box revamp-text-box">
             <p>
@@ -248,8 +206,8 @@ export default function Home() {
             <h1>Revamp your business strategies with us today!</h1>
             <hr />
             <p>
-              Rethink and revamp the ways your business operates to create new
-              and improved solutions
+              Rethink and revamp the ways your business operates to create new and
+              improved solutions
             </p>
             <div className="content-section-button">
               <button>Contact us</button>
@@ -273,8 +231,8 @@ export default function Home() {
                 className="newsletter-image"
               />
               <p>
-                Get the latest <span>free</span> event conference notification
-                and a reminder of upcoming speakers.
+                Get the latest <span>free</span> event conference notification and a
+                reminder of upcoming speakers.
               </p>
             </div>
           </div>
@@ -307,12 +265,7 @@ export default function Home() {
           <div className="footer-cointainer">
             <section className="footer-top-section">
               <div className="footer-top-section-logo">
-                <Image
-                  src="/logo-footer.png"
-                  alt="logo"
-                  width="232"
-                  height="47"
-                />
+                <Image src="/logo-footer.png" alt="logo" width="232" height="47" />
               </div>
               <div className="footer-top-section-container-lists">
                 <div className="footer-top-section-list">
@@ -363,34 +316,19 @@ export default function Home() {
               <p>Bytelight. © 2023. All Rights Reserved.</p>
               <div className="footer-bottom-section-media">
                 <Link href="#">
-                  <Image
-                    src="/instagram.png"
-                    alt="instagram"
-                    width="48"
-                    height="48"
-                  />
+                  <Image src="/instagram.png" alt="instagram" width="48" height="48" />
                 </Link>
                 <Link href="#">
-                  <Image
-                    src="/facebook.png"
-                    alt="facebook"
-                    width="48"
-                    height="48"
-                  />
+                  <Image src="/facebook.png" alt="facebook" width="48" height="48" />
                 </Link>
                 <Link href="#">
-                  <Image
-                    src="/twitter.png"
-                    alt="twitter"
-                    width="48"
-                    height="48"
-                  />
+                  <Image src="/twitter.png" alt="twitter" width="48" height="48" />
                 </Link>
               </div>
             </section>
           </div>
         </div>
       </footer>
-    </div>
+    </>
   )
 }

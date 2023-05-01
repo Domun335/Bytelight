@@ -1,7 +1,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/Domun335/FLP-01/badge)](https://www.codefactor.io/repository/github/Domun335/FLP-01)
+
 # Projekt: Odwzorowanie strony internetowej z serwisu figma
 
-Autor:  Dominik
+Autor: Dominik
 
 ## Opis
 
@@ -21,6 +22,7 @@ Autor:  Dominik
 - Image (https://nextjs.org/docs/api-reference/next/image)
 - Link (https://nextjs.org/docs/api-reference/next/link)
 - Font (https://nextjs.org/docs/basic-features/font-optimization)
+- Sass (https://sass-lang.com)
 
 ## Kontakt
 

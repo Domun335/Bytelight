@@ -1,97 +1,123 @@
+@use './variables.scss' as *;
+
+//* Genelar styles
 body {
   margin: 0px;
-  background-color: #ffffff;
+  background-color: $white;
+  font-family: 'General Sans';
 }
 a {
   color: inherit;
   text-decoration: none;
   position: relative;
 }
-.header-cointeiner {
-  position: relative;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+//* Header styles
+.header {
   width: 100%;
   height: 130px;
-  display: flex;
-  flex-direction: column;
+  @include setFlex(column);
+
+  //* Popup
+  &__popup {
+    width: 100%;
+    height: 40px;
+    background-color: $black;
+    color: $white;
+    @include setFlex(row);
+
+    p {
+      @include setFlex(row);
+      gap: 4px;
+      font-size: 12px;
+      font-family: 'Inter', sans-serif;
+
+      &::before {
+        content: url(/Star.svg);
+        display: block;
+      }
+      &:hover {
+        opacity: 0.5;
+        transition: 0.4s;
+      }
+    }
+  }
+
+  //* Header container
+  &__container {
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    height: 90px;
+    @include setFlex(row);
+    justify-content: space-between;
+  }
+  &__container--left {
+    width: 100%;
+    max-width: 633px;
+    @include setFlex(row);
+    justify-content: space-between;
+  }
+
+  //* Navbar
+  &__navbar {
+    width: 376px;
+    list-style: none;
+    font-weight: bold;
+    @include setFlex(row);
+    justify-content: space-between;
+    font-size: 16px;
+
+    &--arrow {
+      @include setFlex(row);
+      gap: 8px;
+      &::after {
+        content: url(/Arrow-down.svg);
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+    a::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 2px;
+      background-color: $black;
+      scale: 0 1;
+      transform-origin: left;
+      transition: 0.4s;
+    }
+    a:hover::before {
+      scale: 1;
+    }
+  }
+
+  //* Header button
+  &__button {
+    width: 171px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    @extend %buttonStyles;
+    gap: 14px;
+
+    &::after {
+      content: url(/Arrow-right.svg);
+      display: block;
+    }
+    &:hover {
+      scale: 1.04;
+    }
+  }
 }
-.popup {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 12px;
-}
-.popup span:hover {
-  opacity: 0.5;
-  transition: 0.2s;
-}
-.popup span {
-  display: flex;
-  align-items: center;
-}
-.nav {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1280px;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-position {
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 96px;
-}
-.nav-bar ul {
-  position: relative;
-  list-style: none;
-  display: flex;
-  gap: 56px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -2%;
-}
-.nav-bar a::before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  scale: 0 1;
-  transform-origin: left;
-  transition: 0.4s;
-}
-.nav-bar a:hover::before {
-  scale: 1;
-}
-.nav-button {
-  position: relative;
-  padding: 6px 24px 6px 16px;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 99px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -2%;
-  font-weight: 600;
-  transition: 0.4s;
-}
-.nav-button:hover {
-  scale: 1.05;
-  box-shadow: 4px 4px 26px #757575;
-}
+
 .main-section {
   position: relative;
   margin-left: auto;
@@ -147,8 +173,8 @@ a {
   padding-right: 20px;
   padding-bottom: 8px;
   padding-left: 20px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
   border-radius: 99px;
   font-size: 16px;
   line-height: 24px;
@@ -156,15 +182,15 @@ a {
   transition: 0.4s;
 }
 .main-button-black:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $white;
+  color: $black;
 }
 .main-button-white {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   background: none;
-  border: 2px solid #000000;
+  border: 2px solid $black;
   border-radius: 99px;
   font-size: 16px;
   line-height: 24px;
@@ -172,8 +198,8 @@ a {
   transition: 0.4s;
 }
 .main-button-white:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
 }
 .testimonials {
   position: relative;
@@ -333,7 +359,7 @@ a {
 .content-section-button button {
   color: #ffffff;
   margin-top: 40px;
-  background-color: #000000;
+  background-color: $black;
   border-radius: 100px;
   height: 42px;
   width: 125px;
@@ -341,7 +367,7 @@ a {
 }
 .content-section-button button:hover {
   background-color: #eeeeee;
-  color: #000000;
+  color: $black;
   scale: 1.05;
   box-shadow: 4px 4px 26px #505050;
 }
@@ -429,11 +455,11 @@ a {
   text-decoration: underline;
 }
 .newsletter-section-form button {
-  background-color: #000000;
+  background-color: $black;
   max-height: 56px;
   padding-left: 30px;
   padding-right: 30px;
-  color: #ffffff;
+  color: $white;
   font-size: 18px;
   font-weight: 600;
   border-radius: 99px;
@@ -455,7 +481,7 @@ a {
   position: relative;
   width: 100%;
   height: 714px;
-  background-color: #000000;
+  background-color: $black;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -503,7 +529,7 @@ a {
   padding: 0px;
 }
 .footer-top-section-list h3 {
-  color: #ffffff;
+  color: $white;
   font-size: 24px;
   margin-top: 0px;
   margin-bottom: 32px;

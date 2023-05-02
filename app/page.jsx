@@ -150,11 +150,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="content-section">
-          <div className="content-section-image">
-            <Image src="/image-solution.png" alt="solution" width="431" height="461" />
-          </div>
-          <div className="content-section-text-box">
+        <section className="content">
+          <Image
+            src="/image-solution.svg"
+            alt="solution"
+            width="400"
+            height="400"
+            className="content__image"
+          />
+
+          <div className="content__texts">
             <p>
               <span>Solutions for every factor</span>
             </p>
@@ -164,21 +169,15 @@ export default function Home() {
               operations for a variety of industries, including individuals, businesses,
               organizations, and institutions.
             </p>
-            <div className="solution-section-text-box-mark">
+            <div className="content__texts--mark">
               <div className="strar-back">
-                <Image src="/strar.png" alt="" width="30" height="30" />
+                <Image src="/star-blue.svg" alt="star" width="25" height="25" />
               </div>
-              <p>
-                <Link href="#">Deploy</Link>
-              </p>
-              <Image
-                src="/text-box-arrow.png"
-                alt=""
-                width="19"
-                height="12"
-                className="arrow-hv"
-              />
+              <Link href="/">
+                <p>Deploy</p>
+              </Link>
             </div>
+
             <p>
               Deploy is designed to automate and improve the manual processes of software
               administration and management, thereby freeing up the engineers to do what
@@ -187,7 +186,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="content-section section-rivers">
+        <section className="content section-rivers">
           <div className="content-section-image">
             <Image src="/image-expert.png" alt="expert" width="431" height="461" />
           </div>
@@ -207,7 +206,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="content-section revamp-section">
+        <section className="content revamp-section">
           <div className="content-section-image">
             <Image src="/image-revamp.png" alt="revamp" width="283" height="482" />
           </div>

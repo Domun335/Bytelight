@@ -298,57 +298,72 @@ a {
     }
   }
 
-  .content-section {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1280px;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  //* Content scetion
+  .content {
+    margin: auto;
+    width: 100%;
+    min-height: 900px;
+    @include setFlex(row);
     gap: 95px;
-  }
-  .content-section-text-box {
-    max-width: 626px;
-    font-size: 16px;
-  }
-  .content-section-text-box span {
-    color: #ffcb14;
-    font-size: 14px;
-  }
-  .content-section-text-box h1 {
-    font-size: 48px;
-  }
-  .solution-section-text-box-mark {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-  .solution-section-text-box-mark p {
-    font-size: 28px;
-    text-decoration: underline;
-  }
-  .solution-section-text-box-mark p:hover + .arrow-hv {
-    animation: slide-right 2s ease-out infinite;
-  }
-  @keyframes slide-right {
-    0% {
-      transform: translateX(0);
+
+    &__image {
+      width: auto;
+      height: auto;
     }
-    100% {
-      transform: translateX(100%);
+    &__texts {
+      max-width: 626px;
+      font-size: 16px;
+
+      span {
+        color: #ffcb14;
+        font-size: 14px;
+        margin: 0px;
+      }
+      h1 {
+        font-size: 48px;
+        font-family: 'Inter', sans-serif;
+      }
+      p {
+        font-size: 16px;
+        color: #1f1f1f;
+        font-weight: bold;
+      }
+    }
+    &__texts--mark {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      p {
+        position: relative;
+        color: $black;
+        font-size: 28px;
+        text-decoration: underline;
+
+        &:hover::after {
+          transform: translateX(100%);
+        }
+        &::after {
+          position: absolute;
+          transition: 0.4s;
+          right: -50%;
+          content: url(/text-arrow.svg);
+        }
+      }
+    }
+    .strar-back {
+      width: 64px;
+      height: 64px;
+      @include setFlex(row);
+      background-color: #e9e5ff;
+      border-radius: 20px;
+      img {
+        width: auto;
+        height: auto;
+      }
     }
   }
-  .strar-back {
-    width: 64px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e9e5ff;
-    border-radius: 20px;
-  }
+
   .section-rivers {
     flex-direction: row-reverse;
     height: 700px;

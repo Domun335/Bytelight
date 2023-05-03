@@ -351,6 +351,8 @@ a {
         }
       }
     }
+
+    //* Star backgraud
     .strar-back {
       width: 64px;
       height: 64px;
@@ -364,196 +366,225 @@ a {
     }
   }
 
-  .section-rivers {
+  //* River content
+  .content--rivers {
     flex-direction: row-reverse;
-    height: 700px;
+    min-height: 700px;
+
+    &__texts {
+      span {
+        font-size: 16px;
+        color: #7127cf;
+      }
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
   }
-  .section-rivers-text span {
-    color: #7127cf;
-  }
-  .section-rivers-text h1 {
-    font-size: 45px;
-  }
-  .section-rivers-text p {
-    font-size: 18px;
-  }
-  .content-section-button button {
+
+  //* Button content rivers and revamp
+  .content__button {
     color: #ffffff;
+    border: none;
     margin-top: 40px;
     background-color: $black;
     border-radius: 100px;
     height: 42px;
     width: 125px;
     transition: 0.4s;
+
+    &:hover {
+      background-color: #eeeeee;
+      color: $black;
+      scale: 1.05;
+      box-shadow: 4px 4px 26px #505050;
+    }
   }
-  .content-section-button button:hover {
-    background-color: #eeeeee;
-    color: $black;
-    scale: 1.05;
-    box-shadow: 4px 4px 26px #505050;
-  }
-  .revamp-section {
+
+  //* Revamp section
+  .revamp {
     gap: 159px;
+
+    hr {
+      border: solid #eeeeee 1px;
+      border-radius: 0px;
+    }
+    &__texts {
+      max-width: none;
+
+      span {
+        font-size: 16px;
+      }
+      p {
+        font-size: 20px;
+        max-width: 626px;
+      }
+    }
   }
-  .revamp-section hr {
-    border: solid #eeeeee 1px;
-    border-radius: 0px;
-  }
-  .revamp-text-box {
-    max-width: 764px;
-    font-size: 20px;
-  }
-  .revamp-text-box p {
-    max-width: 626px;
-  }
-  .newsletter-section {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1280px;
+
+  //* Newsletter
+  .newsletter {
+    margin: auto;
+    width: 100%;
     height: 668px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include setFlex(column, center, none);
     gap: 64px;
-  }
-  .newsletter-section-text-box {
-    position: relative;
-    width: 100%;
-    max-height: 212px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .newsletter-section-text-box h1 {
-    font-size: 90px;
-  }
-  .newsletter-section-text-box span {
-    color: #293fff;
-  }
-  .newsletter-section-text-box-left {
-    position: relative;
-    padding-top: 126px;
-    max-width: 446px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-  .newsletter-section-text-box-left span {
-    color: #2400ff;
-  }
-  .newsletter-image {
-    background-color: #f5f4f3;
-    padding: 8px;
-    border-radius: 8px;
-  }
-  .newsletter-section-form form {
-    position: relative;
-    max-width: 556px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
-  }
-  .input-email {
-    width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-size: 20px;
-    border: solid #e6e6e6 3px;
-    border-radius: 99px;
-    color: #4e4f51;
-  }
-  .newsletter-section-form-checkbox {
-    display: flex;
-    align-items: center;
-    max-width: 280px;
-    gap: 16px;
-  }
-  .newsletter-section-form-checkbox a {
-    text-decoration: underline;
-  }
-  .newsletter-section-form button {
-    background-color: $black;
-    max-height: 56px;
-    padding-left: 30px;
-    padding-right: 30px;
-    color: $white;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 99px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    transition: 0.4s;
-  }
-  .newsletter-section-form button:hover {
-    scale: 0.95;
-    box-shadow: 4px 4px 26px #505050;
-  }
-  .checkbox {
-    width: 16px;
-    height: 16px;
+
+    &__texts {
+      width: 100%;
+      max-height: 212px;
+      @include setFlex(row, space-between);
+
+      h1 {
+        font-size: 96px;
+        font-family: 'Inter', sans-serif;
+      }
+      span {
+        color: #293fff;
+      }
+    }
+    &__texts--left {
+      align-self: flex-end;
+      max-width: 446px;
+      @include setFlex(row);
+      gap: 24px;
+      font-weight: bold;
+
+      span {
+        color: #2400ff;
+      }
+      &::before {
+        content: url(/megaphone.svg);
+        display: block;
+      }
+    }
+
+    //* Newsletter form
+    .newsletter__form {
+      max-width: 556px;
+      @include setFlex(row, space-between, none);
+      flex-wrap: wrap;
+      gap: 24px;
+
+      button {
+        background-color: $black;
+        border: none;
+        height: 64px;
+        width: 183px;
+        color: $white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 99px;
+        @include setFlex(row);
+        gap: 16px;
+        transition: 0.4s;
+
+        &::after {
+          content: url(/subscribe.svg);
+        }
+        &:hover {
+          scale: 0.95;
+        }
+      }
+      input[type='email'] {
+        width: 100%;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 20px;
+        border: solid #e6e6e6 3px;
+        border-radius: 99px;
+        color: #4e4f51;
+      }
+      &--checkbox {
+        @include setFlex(row, none);
+        max-width: 280px;
+        gap: 16px;
+        font-weight: bold;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+      span {
+        position: absolute;
+        border: solid $black 2px;
+        background-color: $white;
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+        @include setFlex(row);
+
+        &::before {
+          content: url(/check.svg);
+        }
+      }
+      input[type='checkbox'] {
+        width: 16px;
+        height: 16px;
+        opacity: 0;
+
+        &:checked ~ span {
+          opacity: 1;
+          background-color: $black;
+        }
+      }
+    }
   }
 }
 
+//* Foother
 .footer {
-  position: relative;
   width: 100%;
-  height: 714px;
+  min-height: 714px;
   background-color: $black;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-.footer-cointainer {
-  position: relative;
-  width: 1108px;
-  height: 621px;
-  display: flex;
-  flex-direction: column;
-}
-.footer-top-section {
-  position: relative;
-  padding-top: 80px;
-  height: 460px;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 200px;
-}
-.footer-bottom-section {
-  position: relative;
-  width: 1060px;
-  height: 161px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #8687a0;
-  border-top: solid #252642 1px;
-}
-.footer-top-section-container-lists {
-  position: relative;
-  min-width: 514px;
-  display: flex;
-  justify-content: center;
-  gap: 140px;
-}
-.footer-top-section-list ul {
-  color: #8687a0;
-  font-size: 16px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 0px;
-}
-.footer-top-section-list h3 {
-  color: $white;
-  font-size: 24px;
-  margin-top: 0px;
-  margin-bottom: 32px;
+  @include setFlex(row, center, end);
+
+  &__cointainer {
+    max-width: 1060px;
+    max-height: 537px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    height: 460px;
+    @include setFlex(row, space-between, start);
+
+    &--lists {
+      @include setFlex(row, center, start);
+      gap: 110px;
+
+      ul {
+        color: #8687a0;
+        font-size: 16px;
+        list-style: none;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        padding: 0px;
+
+        h3 {
+          color: $white;
+          font-size: 24px;
+          margin: 0px;
+          margin-bottom: 4px;
+        }
+      }
+      .footer__top--lists--third {
+        margin-right: 146px;
+      }
+    }
+  }
+  .footer__bottom {
+    width: 1060px;
+    height: 161px;
+    @include setFlex(row, space-between);
+    color: #8687a0;
+    border-top: solid #252642 1px;
+  }
 }

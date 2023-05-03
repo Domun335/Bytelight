@@ -186,31 +186,42 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="content section-rivers">
-          <div className="content-section-image">
-            <Image src="/image-expert.png" alt="expert" width="431" height="461" />
-          </div>
-          <div className="content-section-text-box section-rivers-text">
+        <section className="content content--rivers">
+          <Image
+            src="/image-expert.svg"
+            alt="expert"
+            width="400"
+            height="400"
+            className="content__image"
+          />
+
+          <div className="content__texts content--rivers__texts">
             <p>
               <span>Solutions for every factor</span>
             </p>
+
             <h1>Expert software solutions for businesses and individuals</h1>
+
             <p>
               We design and implement custom software to improve efficiency and streamline
               operations for various clients, including individuals, businesses,
               organizations, and institutions.
             </p>
-            <div className="content-section-button">
-              <button>Contact us</button>
-            </div>
+
+            <button className="content__button">Contact us</button>
           </div>
         </section>
 
-        <section className="content revamp-section">
-          <div className="content-section-image">
-            <Image src="/image-revamp.png" alt="revamp" width="283" height="482" />
-          </div>
-          <div className="content-section-text-box revamp-text-box">
+        <section className="content revamp">
+          <Image
+            src="/image-revamp.svg"
+            alt="revamp"
+            width="400"
+            height="400"
+            className="content__image"
+          />
+
+          <div className="content__texts revamp__texts">
             <p>
               <span>Work with us</span>
             </p>
@@ -220,124 +231,110 @@ export default function Home() {
               Rethink and revamp the ways your business operates to create new and
               improved solutions
             </p>
-            <div className="content-section-button">
-              <button>Contact us</button>
-            </div>
+
+            <button className="content__button">Contact us</button>
           </div>
         </section>
 
-        <section className="newsletter-section">
-          <div className="newsletter-section-text-box">
+        <section className="newsletter">
+          <div className="newsletter__texts">
             <h1>
               Subscribe to
               <br />
               <span>our newsletter</span>
             </h1>
-            <div className="newsletter-section-text-box-left">
-              <Image
-                src="/megaphone.png"
-                alt=""
-                width="18"
-                height="14"
-                className="newsletter-image"
-              />
+
+            <div className="newsletter__texts--left">
               <p>
                 Get the latest <span>free</span> event conference notification and a
                 reminder of upcoming speakers.
               </p>
             </div>
           </div>
-          <div className="newsletter-section-form">
-            <form>
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="input-email"
-              />
-              <label className="newsletter-section-form-checkbox">
-                <input type="checkbox" className="checkbox" />
-                <p>
-                  I agree with
-                  <Link href="#"> Privacy Policy</Link> and
-                  <Link href="#"> Terms of Conditions</Link>
-                </p>
-              </label>
-              <button>
-                Subscribe
-                <Image src="/subscribe.png" alt="" width="15" height="11" />
-              </button>
-            </form>
-          </div>
+
+          <form className="newsletter__form">
+            <input type="email" placeholder="Your email address" />
+
+            <label className="newsletter__form--checkbox">
+              <input type="checkbox" />
+              <span />
+
+              <p>
+                I agree with
+                <Link href="/"> Privacy Policy</Link> and
+                <Link href="/"> Terms of Conditions</Link>
+              </p>
+            </label>
+
+            <button>Subscribe</button>
+          </form>
         </section>
       </main>
 
-      <footer>
-        <div className="footer">
-          <div className="footer-cointainer">
-            <section className="footer-top-section">
-              <div className="footer-top-section-logo">
-                <Image src="/logo-footer.png" alt="logo" width="232" height="47" />
-              </div>
-              <div className="footer-top-section-container-lists">
-                <div className="footer-top-section-list">
-                  <h3>Product</h3>
-                  <ul>
-                    <li>
-                      <Link href="#">Deploy</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Blog</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="footer-top-section-list">
-                  <h3>Company</h3>
-                  <ul>
-                    <li>
-                      <Link href="#">About Us</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Industries</Link>
-                    </li>
-                    <li>
-                      <Link href="#">How we work</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Career</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="footer-top-section-list">
-                  <h3>Support</h3>
-                  <ul>
-                    <li>
-                      <Link href="#">Terms</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Privacy</Link>
-                    </li>
-                    <li>
-                      <Link href="#">FAQs</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <section className="footer-bottom-section">
-              <p>Bytelight. © 2023. All Rights Reserved.</p>
-              <div className="footer-bottom-section-media">
-                <Link href="#">
-                  <Image src="/instagram.png" alt="instagram" width="48" height="48" />
-                </Link>
-                <Link href="#">
-                  <Image src="/facebook.png" alt="facebook" width="48" height="48" />
-                </Link>
-                <Link href="#">
-                  <Image src="/twitter.png" alt="twitter" width="48" height="48" />
-                </Link>
-              </div>
-            </section>
-          </div>
+      <footer className="footer">
+        <div className="footer__cointainer">
+          <section className="footer__top">
+            <Image src="/logo-footer.svg" alt="logo" width="232" height="47" />
+
+            <div className="footer__top--lists">
+              <ul>
+                <h3>Product</h3>
+
+                <li>
+                  <Link href="/">Deploy</Link>
+                </li>
+                <li>
+                  <Link href="/">Blog</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <h3>Company</h3>
+
+                <li>
+                  <Link href="/">About Us</Link>
+                </li>
+                <li>
+                  <Link href="/">Industries</Link>
+                </li>
+                <li>
+                  <Link href="/">How we work</Link>
+                </li>
+                <li>
+                  <Link href="/">Career</Link>
+                </li>
+              </ul>
+
+              <ul className="footer__top--lists--third">
+                <h3>Support</h3>
+
+                <li>
+                  <Link href="/">Terms</Link>
+                </li>
+                <li>
+                  <Link href="/">Privacy</Link>
+                </li>
+                <li>
+                  <Link href="/">FAQs</Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="footer__bottom">
+            <p>Bytelight. © 2023. All Rights Reserved.</p>
+            <div className="footer__bottom--media">
+              <Link href="/">
+                <Image src="/instagram.svg" alt="instagram" width="48" height="48" />
+              </Link>
+              <Link href="/">
+                <Image src="/facebook.svg" alt="facebook" width="48" height="48" />
+              </Link>
+              <Link href="/">
+                <Image src="/twitter.svg" alt="twitter" width="48" height="48" />
+              </Link>
+            </div>
+          </section>
         </div>
       </footer>
     </>

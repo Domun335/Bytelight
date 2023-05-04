@@ -545,6 +545,7 @@ a {
   @include setFlex(row, center, end);
 
   &__cointainer {
+    width: 100%;
     max-width: 1060px;
     max-height: 537px;
     display: flex;
@@ -581,10 +582,40 @@ a {
     }
   }
   .footer__bottom {
-    width: 1060px;
+    width: 100%;
     height: 161px;
     @include setFlex(row, space-between);
     color: #8687a0;
     border-top: solid #252642 1px;
+  }
+}
+
+//* Media query
+@media all and (width <= 1280px) {
+  .hero__image {
+    width: 100%;
+  }
+  .cards__cointeiner {
+    flex-wrap: wrap;
+  }
+  .newsletter .newsletter__texts h1 {
+    font-size: 64px;
+  }
+}
+@media all and (width <= 930px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .newsletter .newsletter__texts {
+    flex-wrap: wrap;
+  }
+  .footer__top--lists .footer__top--lists--third {
+    margin: 0px;
+  }
+}
+@media all and (width <= 740px) {
+  .footer__top--lists {
+    flex-wrap: wrap;
+    gap: 80px;
   }
 }

@@ -4,36 +4,6 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <header className="header">
-        <div className="header__popup">
-          <Link href="/">
-            <p>A custom notification goes here</p>
-          </Link>
-        </div>
-
-        <div className="header__container">
-          <Image src="/Logo.svg" alt="logo" width="127" height="21" />
-
-          <div className="header__container--left">
-            <nav>
-              <ul className="header__navbar">
-                <Link href="/">
-                  <li className="header__navbar--arrow">Products</li>
-                </Link>
-                <Link href="/">
-                  <li>Company</li>
-                </Link>
-                <Link href="/">
-                  <li>Industries</li>
-                </Link>
-              </ul>
-            </nav>
-
-            <button className="header__button">Contact sales</button>
-          </div>
-        </div>
-      </header>
-
       <main className="main">
         <section className="hero">
           <div className="hero__up">
@@ -270,73 +240,6 @@ export default function Home() {
           </form>
         </section>
       </main>
-
-      <footer className="footer">
-        <div className="footer__cointainer">
-          <section className="footer__top">
-            <Image src="/logo-footer.svg" alt="logo" width="232" height="47" />
-
-            <div className="footer__top--lists">
-              <ul>
-                <h3>Product</h3>
-
-                <li>
-                  <Link href="/">Deploy</Link>
-                </li>
-                <li>
-                  <Link href="/">Blog</Link>
-                </li>
-              </ul>
-
-              <ul>
-                <h3>Company</h3>
-
-                <li>
-                  <Link href="/">About Us</Link>
-                </li>
-                <li>
-                  <Link href="/">Industries</Link>
-                </li>
-                <li>
-                  <Link href="/">How we work</Link>
-                </li>
-                <li>
-                  <Link href="/">Career</Link>
-                </li>
-              </ul>
-
-              <ul className="footer__top--lists--third">
-                <h3>Support</h3>
-
-                <li>
-                  <Link href="/">Terms</Link>
-                </li>
-                <li>
-                  <Link href="/">Privacy</Link>
-                </li>
-                <li>
-                  <Link href="/">FAQs</Link>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="footer__bottom">
-            <p>Bytelight. © 2023. All Rights Reserved.</p>
-            <div className="footer__bottom--media">
-              <Link href="/">
-                <Image src="/instagram.svg" alt="instagram" width="48" height="48" />
-              </Link>
-              <Link href="/">
-                <Image src="/facebook.svg" alt="facebook" width="48" height="48" />
-              </Link>
-              <Link href="/">
-                <Image src="/twitter.svg" alt="twitter" width="48" height="48" />
-              </Link>
-            </div>
-          </section>
-        </div>
-      </footer>
     </>
   )
 }
